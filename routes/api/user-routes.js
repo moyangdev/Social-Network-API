@@ -10,7 +10,6 @@ const {
     deleteFriend
 } = require('../../controllers/user-controller');
 
-
 // Set up GET all and POST at /api/users
 router
     .route('/')
@@ -23,7 +22,6 @@ router
     .get(getUserById)
     .put(updateUser)
     .delete(deleteUser);
-
 
 // Set up POST and DELETE at /api/users/:id/friends/:friendId'
 router
